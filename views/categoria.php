@@ -6,7 +6,7 @@
 include ('../php/conexion.php');
 include ('FredyNav2.php');
 $cat = $_GET['cat'];
-$fitro = $_GET['f'];
+$filtro = $_GET['f'];
 $sql= mysqli_query($conn, "SELECT * FROM productos WHERE categoria = '$cat'");
 $filas = mysqli_num_rows($sql);
 
@@ -63,7 +63,13 @@ if ($Residuo == 0) {
 		}else{
 	  for ($i=0; $i <=$Filas_pagina; $i++) {
 		$inicia=$i*3; 
-		$productos = mysqli_query($conn, "SELECT * FROM productos WHERE categoria = '$cat' LIMIT $inicia,3");
+		if ($filtro == "") {
+			$productos = mysqli_query($conn, "SELECT * FROM productos WHERE categoria = '$cat' LIMIT $inicia,3");			
+		}elseif ($filtro == "Precio") {
+			$productos = mysqli_query($conn, "SELECT * FROM productos WHERE categoria = '$cat'  ORDER BY precio LIMIT $inicia,3");
+		}elseif ($filtro == "New") {
+			$productos = mysqli_query($conn, "SELECT * FROM productos WHERE categoria = '$cat'  ORDER BY id_producto DESC LIMIT $inicia,3");		}
+		
 	  ?>
 		<div class="row">
 		<?php

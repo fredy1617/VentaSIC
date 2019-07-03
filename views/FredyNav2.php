@@ -191,11 +191,11 @@
     var elems = document.querySelectorAll('.carousel.carousel-slider');
     var instances = M.Carousel.init(elems, {
 		      fullWidth: true,
-		      duration: 450,
+		      duration: 800,
 		      indicators: true,
 		    });
     setInterval(function(){
     	$('.carousel').carousel('next');
-    },6000);
+    },8000);
   });
 </script>

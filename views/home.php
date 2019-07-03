@@ -10,14 +10,14 @@ include('FredyNav2.php')
 	<div id="datos">
 	<div class="row">
 		  <div class="carousel carousel-slider  hide-on-small-only">
-		    <a class="carousel-item" href="#"><img style="height: 300px;" src="img/4.jpg">
+		    <a class="carousel-item" href="#"><img style="height: 320px;" src="img/4.jpg">
   			</a>
-		   <!-- <a class="carousel-item" href="#"><img style="height: 300px;" src="img/2.jpg">
+  			<a class="carousel-item" href="#"><img style="height: 320px;" src="img/1.jpg">
+  			</a>		   <!-- <a class="carousel-item" href="#"><img style="height: 320px;" src="img/2.jpg">
   			</a>
-		    <a class="carousel-item" href="#"><img style="height: 300px;" src="img/3.jpg">
+		    <a class="carousel-item" href="#"><img style="height: 320px;" src="img/3.jpg">
   			</a>
-		    <a class="carousel-item" href="#"><img style="height: 300px;" src="img/1.jpg">
-  			</a>-->
+		    -->
   			</div>
   			<div class="carousel carousel-slider  hide-on-med-and-up">
 		    <a class="carousel-item" href="#"><img style="height: 130px;" src="img/4.jpg">
