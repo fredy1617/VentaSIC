@@ -11,9 +11,9 @@
                 <h5 class="white-text" id="Contacto">Contactos:</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/SerIntCompu.SIC" target="_blank"><i class="fa fa-facebook"></i>Facebook: Servicios integrales de computación</a></li>
-                  <li><a class="grey-text text-lighten-3">Tels: 433 935 62 86 y 433 935 62 88</a></li>
+                  <li><a class="grey-text text-lighten-3">Tels: (01 433) 9 35 62 86 y 9 35 62 88</a></li>
                   <li><a class="grey-text text-lighten-3" >WhatsApp: 433 935 62 86</a></li>
-                  <li><a class="grey-text text-lighten-3" >Correo: Sic.som@hotmail.com</a></li>                  
+                  <li><a class="grey-text text-lighten-3" >Correo: sic.som@hotmail.com</a></li>                  
                   <li><a class="grey-text text-lighten-3" >Dirección: Av. Hidalgo #508 Col. Centro.</a></li>
                 </ul>
               </div>
