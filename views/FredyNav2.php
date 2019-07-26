@@ -7,7 +7,7 @@
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../img/logo.jpg" type="image/jpg" />
 <style rel="stylesheet">
 	.dropdown-content{
 	 overflow: visible;
