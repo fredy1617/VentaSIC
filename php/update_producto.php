@@ -1,6 +1,3 @@
-<script >
-	
-</script>
 <?php
 include('../php/conexion.php');
 include 'scripts.php';
@@ -12,7 +9,7 @@ $Precio = $_POST['precio'];
 $Descripcion = $_POST['descripcion'];
 $id_producto = $_POST['id_producto'];
 $Categoria = $_POST['categoria'];
-
+$Oferta = $_POST['oferta'];
 
 if ($Tiene != "") {
 	$Imagen = addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
@@ -20,7 +17,7 @@ if ($Tiene != "") {
 }else{
 	$Insert = "";
 }
-$sql = "UPDATE productos SET nombre = '$Nombre', cantidad = '$Cantidad', precio = '$Precio', descripcion = '$Descripcion'".$Insert.", categoria = '$Categoria' WHERE id_producto = '$id_producto'";
+$sql = "UPDATE productos SET nombre = '$Nombre', cantidad = '$Cantidad', precio = '$Precio', descripcion = '$Descripcion'".$Insert.", categoria = '$Categoria', oferta = '$Oferta' WHERE id_producto = '$id_producto'";
 if (mysqli_query($conn, $sql)) {
 
 	echo "Se actualizó correctamente.";
