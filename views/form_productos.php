@@ -44,21 +44,28 @@ include('FredyNav.php');
          materialize-textarea validate" data-length="100" required></textarea>
           <label for="descripcion">Descripcion:</label>
         </div>
-        <div class="input-field col s12 m6 l6" >
+        <div class="input-field col s8 m4 l4" >
           <i class="col s1"> <br></i>
           <select id="categoria" name="categoria" class="browser-default col s10" required>
-            <option value="0" selected>Seleccione la Categoria</option>            
+            <option value="" selected>Seleccione la Categoria</option>            
             <option value="Accesorios Computo">Accesorios Computo</option>
             <option value="Laptops">Laptops</option>
-            <option value="Moviles y Accesorios">Moviles y Accesorios</option>               
+            <option value="Moviles y Accesorios">Moviles y Accesorios</option>
             <option value="Camaras Ip">Camaras Ip</option>               
             <option value="Camaras PTZ">Camaras PTZ</option>               
             <option value="Kit Instalación">Kit Instalación</option>               
             <option value="Impresoras">Impresoras</option>               
-            <option value="Consumibles Impresora">Consumibles Impresora</option>              
+            <option value="Consumibles Impresora">Consumibles Impresora</option>
             <option value="Accesorios Impresora y Otros">Accesorios Impresora y Otros</option> 
           </select>
         </div> 
+        <div class="col s4 m2 l2"><br>
+          <select id="oferta" name="oferta" class="browser-default col s10" required>
+            <option value="" selected>Oferta!</option>            
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+        </div>
 	</div>
 	  <button class="btn waves-effect waves-light pink right" type="submit" name="action">Guardar
 	    <i class="material-icons right">send</i>

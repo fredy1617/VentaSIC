@@ -50,6 +50,13 @@ include('FredyNav.php');
 					<td><?php echo $datos['categoria']; ?></td>
 					<td><form method="post" action="../views/editar_producto.php"><input id="id_producto" name="id_producto" type="hidden" value="<?php echo $datos['id_producto']; ?>"><button class="btn btn-floating pink waves-effect waves-light"><i class="material-icons">edit</i></button></form></td>
 					<td><a onclick="borrar_producto(<?php echo $datos['id_producto']; ?>);" class="btn btn-floating red darken-1 waves-effect waves-light"><i class="material-icons">delete</i></a></td>
+					<?php
+					if ($datos['oferta'] == 'Si') {
+					?>
+					<td><span class="new badge red" data-badge-caption="Oferta!"></span></td>
+					<?php
+					}
+					?>
 				</tr>
 			<?php
 			}

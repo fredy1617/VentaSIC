@@ -7,8 +7,9 @@ $Cantidad = $_POST['cantidad'];
 $Precio = $_POST['precio'];
 $Descripcion = $_POST['descripcion'];
 $Categoria = $_POST['categoria'];
+$Oferta = $_POST['oferta'];
 
-if (mysqli_query($conn, "INSERT INTO productos (nombre, precio, cantidad, descripcion, imagen, categoria) VALUES ('$Nombre', '$Precio', '$Cantidad', '$Descripcion', '$Imagen', '$Categoria')")) {
+if (mysqli_query($conn, "INSERT INTO productos (nombre, precio, cantidad, descripcion, imagen, categoria, oferta) VALUES ('$Nombre', '$Precio', '$Cantidad', '$Descripcion', '$Imagen', '$Categoria', '$Oferta')")) {
 	?>
 	<script>    
 	    var a = document.createElement("a");
